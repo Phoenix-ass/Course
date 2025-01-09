@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch-Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="video.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+        }
+        .completed {
+            
+            display: block;
+        }
+        #player
+        {
+            margin-left: 30px;
+            width: 80%;
+            height: 400px;
+            border: 2px solid;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <div class="watchcourse-container">
+        <header>
+            <h1>GowthamRaj Network</h1>
+            <div class="left"><p class="learner">My Learning</p>
+                <p class="purple">Account</p>
+                <p class="icon"><i class="fa-solid fa-circle-user"></i></p></div>
+            
+        </header>
+        <div class="miniheader">
+          <div class="navbar">
+            <div class="logo">GowthamRaj Network</div>
+            <div class="burger-icon" onclick="toggleMenu()">☰</div>
+          </div>
+
+          <div class="overlay-menu" id="overlayMenu">
+            <div class="close-btn" onclick="toggleMenu()">×</div>
+            <h3>GowthamRaj Network</h3>
+            
+                 <ul>
+                  <li><a class="icon"><i class="fa-solid fa-circle-user"></i></a></li>
+                  <li><a>Account</a></li>
+                  <li><a class="learner">My Learning</a></li>
+
+                   
+                </ul>
+            
+        </div>
+        </div>
+       
+        <!-- SUBWATCH-CONTAINER -->
+         <div class="subwatch-container">
+            <div class="sc-part1 mamba1" id="sc-part1">
+                <div class="sc-p1-card1 cd" >
+                    <h3>Profeshional HTML MasterClass</h3>
+                    <div class="progress">
+                        <label for="prog-bar" id="labl">Course Progress</label>
+                        <progress id="prog-bar" value="0" max="100" ></progress>
+
+                    </div>
+                </div>
+
+                <div class="sc-p1-card2 cd" id="spc2">
+                    <h3 id="section-1" class="heading ">Digital Lecture-1</h3>
+                    <ul>
+                        
+                        <li class="topic">Basic stucture of HTML<i class="fa-regular fa-circle-check "></i></li>
+                        
+                        
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card3 cd">
+                    <h3 id="section-2" class="heading">Digital Lecture-2</h3>
+                    <ul>
+                        <li class="topic" >heading tags in HTML <i class="fa-regular fa-circle-check"></i></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card4 cd">
+                    <h3 id="section-3" class="heading">Digital Lecture-3</h3>
+                    <ul>
+                        <li class="topic" >Paragraph tag in HTML<i class="fa-regular fa-circle-check"></i></li>
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card5 cd">
+                    <h3 id="section-4" class="heading">Digital Lecture-4</h3>
+                    <ul>
+                        <li class="topic">dividion tag in HTML<i class="fa-regular fa-circle-check"></i></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card6 cd">
+                    <h3 id="section-5" class="heading">Digital Lecture-5</h3>
+                    <ul>
+                        <li class="topic">CSS Types<i class="fa-regular fa-circle-check"></i></li>
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card7 cd">
+                    <h3     id="section-6" class="heading">Digital Lecture-6</h3>
+                    <ul>
+                        <li class="topic">iframes in HTML<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+                <div class="sc-p1-card8 cd">
+                    <h3     id="section-7" class="heading">Digital Lecture-7</h3>
+                    <ul>
+                        <li class="topic">ordered lists<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+                <div class="sc-p1-card9 cd">
+                    <h3     id="section-8" class="heading">Digital Lecture-8</h3>
+                    <ul>
+                        <li class="topic">unordered lists<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+                <div class="sc-p1-card10 cd">
+                    <h3     id="section-9" class="heading">Digital Lecture-9</h3>
+                    <ul>
+                        <li class="topic">Images in HTML<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card11 cd">
+                    <h3     id="section-10" class="heading">Digital Lecture-10</h3>
+                    <ul>
+                        <li class="topic">tables in HTML<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+                <div class="sc-p1-card12 cd">
+                    <h3     id="section-11" class="heading">Digital Lecture-11</h3>
+                    <ul>
+                        <li class="topic">anchor tags in HTML<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card13 cd">
+                    <h3     id="section-12" class="heading">Digital Lecture-12</h3>
+                    <ul>
+                        <li class="topic">forms in HTML<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card14 cd">
+                    <h3     id="section-13" class="heading">Digital Lecture-13</h3>
+                    <ul>
+                        <li class="topic">meta tags in HTML <i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+
+                <div class="sc-p1-card15 cd">
+                    <h3     id="section-14" class="heading">Digital Lecture-14</h3>
+                    <ul>
+                        <li class="topic">Conclusion<i class="fa-regular fa-circle-check"></i></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sc-part2 mamba2" id="sc-part2">
+                <div class="Menu" onclick="togglepart1()">☰<p>Menu</p></div>
+                <div id="player"></div>
+                
+                <div class="txt" id="txt">
+                    <h3>About HTML</h3>
+                    <p>HTML (HyperText Markup Language) is the backbone of web development, serving as the standard language used to structure and display content on the web. It provides the framework for web pages, allowing developers to define elements such as headings, paragraphs, images, links, tables, and multimedia. HTML uses tags and attributes to organize and format content, ensuring it can be easily interpreted by browsers. As a fundamental skill for any web developer, HTML works seamlessly with CSS for styling and JavaScript for interactivity, making it an essential starting point for creating engaging, dynamic, and user-friendly websites.</p>
+                </div>
+                <div class="butts">
+                    <button id="pre">Previous</button>
+                    <button id="nxt">Next</button>
+                </div>
+                
+            </div>
+         </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+
+    const topics = [
+        { id: 'Of2HMS3wudk', title: 'Topic 1' },
+        { id: 'Kok9MpE9-xQ', title: 'Topic 2' },
+        { id: 'RbO7zq3SU1w', title: 'Topic 3' },
+        { id: 'e4oU0WLZO_s', title: 'Topic 4' },
+        { id: 'Uf7ukAKtuVQ', title: 'Topic 5' },
+        { id: 'LoxSdbOkNqs', title: 'Topic 6' },
+        { id: 'nUoWQzazaWQ', title: 'Topic 7' },
+        { id: 'I72ies6fiy8', title: 'Topic 8' },
+        { id: 'KYJ8RsoO7yM', title: 'Topic 9' },
+        { id: '_WRCZ1pNidI', title: 'Topic 10' },
+        { id: 'ovuV2JQVTC4', title: 'Topic 11' },
+        { id: 'l5_g2_D4N-g', title: 'Topic 12' },
+        { id: 'lZF6yxEiov4', title: 'Topic 13' },
+        { id: 'B5WEM2hKe5k', title: 'Topic 14' }
+    ];
+                
+    
+        var player;
+        let currentTopicIndex = 0;
+        let isVideoCompleted = false;
+        let progressincreasepercent=100/topics.length;
+       let onceplay=0;
+    
+        // 2. Initialize the YouTube player
+        function onYouTubeIframeAPIReady() {
+
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: topics[0].id,  // Load the first video by default
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+    
+    function onPlayerStateChange(event) {
+        // When the video ends, mark it as complete
+        if (event.data === YT.PlayerState.ENDED) {
+            isVideoCompleted = true;
+            updateTopicStyles(currentTopicIndex); // Mark current topic as completed
+            if(onceplay===0)
+        {
+            updateprogressbar();
+            onceplay++;
+        }
+
+        }
+    };
+
+    
+    function updateTopicStyles(index) {
+    const topicElements = document.querySelectorAll('.topic');
+    topicElements.forEach((el, idx) => {
+        if (idx === index) {
+            el.firstElementChild.classList.add('completed');
+
+         } // Mark as completed
+        //  else {
+        //     el.firstElementChild.classList.remove('completed'); // Reset
+        // }
+    });
+}
+
+    function loadVideo(index) {
+        // Only proceed to load the new video if the previous one is completed
+    
+        if (isVideoCompleted) {
+            currentTopicIndex = index;
+            player.loadVideoById(topics[index].id); // Load the selected video
+            // updateTopicStyles(index); // Update the sidebar styles
+            isVideoCompleted = false; // Reset completion status for the new video
+        } else {
+            alert('Please complete the current video before moving on.');
+        }
+    }
+    //it donot check the current video is completed because next video will proceed only if previuos video completed 
+
+    function newloadvideo(index)
+    {
+        player.loadVideoById(topics[index].id);
+    }
+    function getId()
+    {
+        let videoData=player.getVideoData();
+        return videoData.video_id;
+    }
+    function loadprevious()
+    {
+        var cindex=getId();
+        var prviousIndex=(cindex==='Of2HMS3wudk')?0:(cindex==="Kok9MpE9-xQ")?1:(cindex==="RbO7zq3SU1w")?2:(cindex==="e4oU0WLZO_s")?3:(cindex==="Uf7ukAKtuVQ")?4:(cindex==="LoxSdbOkNqs")?5:(cindex==="nUoWQzazaWQ")?6:(cindex==="I72ies6fiy8")?7:(cindex==="KYJ8RsoO7yM")?8:(cindex==="_WRCZ1pNidI")?9:(cindex==="ovuV2JQVTC4")?10:(cindex==="l5_g2_D4N-g")?11:(cindex==="lZF6yxEiov4")?12:(cindex==="B5WEM2hKe5k")?13:"not a valid";
+        if(prviousIndex===0)
+        {
+            alert("no videos available before this");
+        } 
+        else
+        {
+            newloadvideo(prviousIndex-1);
+        }
+    }
+
+    function loadnext()
+    {
+        var cidx=getId();
+        var nxtindex=(cidx==='Of2HMS3wudk')?0:(cidx==="Kok9MpE9-xQ")?1:(cidx==="RbO7zq3SU1w")?2:(cidx==="e4oU0WLZO_s")?3:(cidx==="Uf7ukAKtuVQ")?4:(cidx==="LoxSdbOkNqs")?5:(cidx==="nUoWQzazaWQ")?6:(cidx==="I72ies6fiy8")?7:(cidx==="KYJ8RsoO7yM")?8:(cidx==="_WRCZ1pNidI")?9:(cidx==="ovuV2JQVTC4")?10:(cidx==="l5_g2_D4N-g")?11:(cidx==="lZF6yxEiov4")?12:(cidx==="B5WEM2hKe5k")?13:"not a valid";
+
+        if(nxtindex===topics.length-1)
+    {
+        alert ("Finished all video");
+    }
+    else
+    {
+        loadVideo(nxtindex+1);
+        let topicElements = document.querySelectorAll('.topic');
+        if(!topicElements[nxtindex+1].firstElementChild.classList.contains('completed'))
+    {
+        updateprogressbar();
+    }
+        
+
+        
+    }
+    }
+    
+       
+    document.querySelectorAll('.topic').forEach((el, index) => {
+        el.addEventListener('click', () => {
+            loadVideo(index);  // Load video when a topic is clicked
+        });
+    });
+
+    let prebut=document.querySelector("#pre");
+      let nxt=document.querySelector("#nxt");
+      prebut.addEventListener("click",(e)=>{
+        e.preventDefault();
+        loadprevious();
+
+    });
+      nxt.addEventListener("click",(e)=>{
+        e.preventDefault();
+        loadnext();
+      });
+        
+      </script>
+      <script>
+      function toggleMenu() 
+      { 
+        console.log("cliked");
+      
+        const overlayMenu = document.getElementById('overlayMenu');
+        overlayMenu.classList.toggle('actives');
+      };
+      function updateprogressbar()
+      {
+        let prog=document.getElementById("prog-bar");
+        prog.value+=progressincreasepercent;
+
+      };
+
+
+
+      
+      
+      
+    </script>
+</body>
+</html>

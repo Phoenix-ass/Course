@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analyst</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <style>
+      .category-container {
+        width: 90%;
+        max-width: 1500px;
+        margin: 20px auto;
+      }
+      .category-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-navbar">
+      <div class="nav-left">
+        <button id="menu-toggle" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo">LearnHub</div>
+      </div>
+      <div class="nav-center">
+        <div class="search-bar">
+          <input type="text" placeholder="Search for courses..." />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="nav-button">Sign In</button>
+        <button class="nav-button primary">Sign Up</button>
+      </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>Categories</h2>
+        <button id="close-sidebar" class="close-button">&times;</button>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="#" data-category="all">All Courses</a></li>
+        <li>
+          <a href="#" data-category="programming">Programming</a>
+        </li>
+        <li><a href="#" data-category="data-science">Data Science</a></li>
+        <li><a href="#" data-category="web">Web Development</a></li>
+        <li>
+          <a href="#" data-category="data-analyst" class="active"
+            >Data Analyst</a
+          >
+        </li>
+        <li><a href="#" data-category="ml">Machine Learning</a></li>
+        <li><a href="#" data-category="business">Java Courses</a></li>
+        <li><a href="#" data-category="design">Design</a></li>
+      </ul>
+    </div>
+
+    <main class="main-content">
+      <div class="hero-section">
+        <h1>Learn Without Limits</h1>
+        <p>
+          Start, switch, or advance your career with thousands of courses from
+          our expert instructors.
+        </p>
+      </div>
+
+      <section class="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="course-grid" id="courseGrid">
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Python Programming Masterclass"
+            />
+            <div class="course-info">
+              <h3>Data analytics certification</h3>
+              <p class="instructor">Sarah Wilson</p>
+              <div class="rating">4.9 ⭐ (3200 reviews)</div>
+              <div class="price">₹599.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="JavaScript Complete Guide"
+            />
+            <div class="course-info">
+              <h3>Google Data Analytics Professional Certificate</h3>
+              <p class="instructor">Mike Johnson</p>
+              <div class="rating">4.8 ⭐ (2800 reviews)</div>
+              <div class="price">₹499.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Data Science Fundamentals"
+            />
+            <div class="course-info">
+              <h3>Statistics training courses</h3>
+              <p class="instructor">Emily Chen</p>
+              <div class="rating">4.7 ⭐ (1900 reviews)</div>
+              <div class="price">₹699.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Complete Web Development Bootcamp"
+            />
+            <div class="course-info">
+              <h3>Certified Data Analyst Course</h3>
+              <p class="instructor">John Doe</p>
+              <div class="rating">4.8 ⭐ (2500 reviews)</div>
+              <div class="price">₹768.9</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="iOS App Development with Swift"
+            />
+            <div class="course-info">
+              <h3>Business and Data Analysis with SQL</h3>
+              <p class="instructor">Lisa Zhang</p>
+              <div class="rating">4.9 ⭐ (1500 reviews)</div>
+              <div class="price">₹899.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Machine Learning A-Z"
+            />
+            <div class="course-info">
+              <h3>Data Analysis Certification 2024</h3>
+              <p class="instructor">David Brown</p>
+              <div class="rating">4.7 ⭐ (3200 reviews)</div>
+              <div class="price">₹987.12</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Business Strategy Fundamentals"
+            />
+            <div class="course-info">
+              <h3>IBM Data Analyst Professional Certificate</h3>
+              <p class="instructor">Robert Smith</p>
+              <div class="rating">4.6 ⭐ (1800 reviews)</div>
+              <div class="price">₹449.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="UI/UX Design Principles"
+            />
+            <div class="course-info">
+              <h3>Microsoft certification in data analyst</h3>
+              <p class="instructor">Amanda Lee</p>
+              <div class="rating">4.8 ⭐ (2100 reviews)</div>
+              <div class="price">₹599.99</div>
+              <button class="btn">
+                <a href="Description/DataAnalyst.html">View Details</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

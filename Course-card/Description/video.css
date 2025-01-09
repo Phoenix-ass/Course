@@ -1,0 +1,598 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body
+{   
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.watchcourse-container
+{
+width: 100%;
+display: flex;
+flex-direction: column;
+margin-top: 0px;
+box-sizing: border-box;
+background-color: #fff;
+}
+.watchcourse-container header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background-color: rgb(9, 101, 161);
+}
+.watchcourse-container header .left
+{
+    margin: 20px;
+    display: flex;
+    justify-content:space-around;
+    gap: 60px;
+    
+} 
+.watchcourse-container header .left .learner
+{
+    border: 1px solid;
+    padding: 6px;
+    border-color:rgb(9, 101, 161);
+}
+.miniheader
+{
+    display: none;
+}
+
+.purple
+{
+    border: none;
+    padding: 10px;
+    background-color:rgb(12, 101, 160);
+    border-color:rgb(9, 101, 161);
+    border-radius: 2px;
+    
+}
+.watchcourse-container header .left .icon
+{
+    border: 2px solid;
+    border-color:rgb(9, 101, 161);
+}
+.watchcourse-container header .left .icon i
+{
+    font-size: 30px;
+    padding: 5px;
+}
+.subwatch-container
+{
+
+display: flex;
+}
+.subwatch-container .sc-part1
+{
+ width: 20%;
+ height:110vh;
+ overflow: scroll;
+ border: 2px solid;
+ border-color: #ccc;
+}
+
+
+.subwatch-container .sc-part1 .cd
+{
+    border: 2px solid;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 98%;
+    text-transform: capitalize;
+    border-color: #ccc;
+
+
+}
+progress
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress
+{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+progress::-webkit-progress-bar
+{
+    background-color: #d6d3d3;
+    border-radius: 10px;
+}
+progress::-webkit-progress-value
+{
+    background-color:rgb(9, 101, 161);
+    border-radius: 10px;
+
+}
+.sc-p1-card1,.sc-p1-card2,.sc-p1-card3,.sc-p1-card4,.sc-p1-card5,.sc-p1-card6,.sc-p1-card7,.sc-p1-card8,.sc-p1-card9,.sc-p1-card10,.sc-p1-card11,.sc-p1-card12,.sc-p1-card13,.sc-p1-card14,.sc-p1-card15{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.subwatch-container .sc-part2
+{
+ width: 80%;
+ height: 110vh;
+ border: 2px solid;
+ border-color: #ccc;
+
+}
+.sc-p1-card1,.progress
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.fa-regular
+{
+    color: green;
+    display:none;
+}
+
+
+.sc-p1-card2 ul,.sc-p1-card3 ul,.sc-p1-card4 ul,.sc-p1-card5 ul,.sc-p1-card6 ul,.sc-p1-card7 ul,.sc-p1-card8 ul,.sc-p1-card9 ul,.sc-p1-card10 ul,.sc-p1-card11 ul,.sc-p1-card12 ul,.sc-p1-card13 ul,.sc-p1-card14 ul,.sc-p1-card15 ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.sc-p1-card2 ul li,.sc-p1-card3 ul li,
+.sc-p1-card4 ul li,
+.sc-p1-card5 ul li,
+.sc-p1-card6 ul li,
+.sc-p1-card7 ul li,
+.sc-p1-card8 ul li,
+.sc-p1-card9 ul li,
+.sc-p1-card10 ul li,
+.sc-p1-card11 ul li,
+.sc-p1-card12 ul li,
+.sc-p1-card13 ul li,
+.sc-p1-card14 ul li,
+.sc-p1-card15 ul li
+
+{
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-color: #f8f6f6;
+    list-style: none;
+}
+
+
+
+.sc-part2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Menu
+{
+    display: none;
+}
+#player
+{
+    background-color: #fff;
+    width: 60%;
+    height: 40%;
+    margin-top: 40px;
+
+}
+.sc-part2 iframe
+{
+    background-color: #fff;
+    width: 60%;
+    height: 40%;
+    margin-top: 40px;
+
+}
+.sc-part2 .txt
+{
+padding: 10px;
+}
+.heading
+{
+    padding:10px;
+    margin: 5px 0;
+    border:1px solid #ccc;
+    background-color: #f4f4f4;
+    transition:backround-color 0.3s ease;
+}
+.active{
+    color:rgb(9, 101, 161);
+    font-weight: bold;
+}
+
+/* Active Class */
+
+/* burger navbar*/
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(9, 101, 161);
+    color:white;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.burger-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color:white;
+}
+
+/* Overlay menu */
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: rgb(19, 11, 11);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 40; /* Ensures it appears above everything */
+}
+.overlay-menu h3{
+    background-color:rgb(9, 101, 161);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+}
+.overlay-menu.actives {
+    transform: translateX(0);
+}
+
+.overlay-menu .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.overlay-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+}
+
+.overlay-menu ul li {
+    margin: 15px 0;
+    border-bottom: 1px solid;
+    text-align: start;
+    padding-left:20px;
+    font-size: 10px;
+    border-color: #b6b3b5;
+    padding-bottom: 4px;
+}
+
+.overlay-menu ul li a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.overlay-menu ul li a:hover {
+    color: #f39c12;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards */
+.cd, .purple, .learner, .icon {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cd:hover, .purple:hover, .learner:hover, .icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Active Section */
+.heading.active {
+    background-color: rgba(161, 59, 161, 0.2);
+    border-left: 4px solid #a13ba1;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.sc-part1 {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Cards and Layout */
+.cd {
+    width: 95%;
+}
+.butts
+{
+    display:flex;
+    gap: 30px;
+
+
+}
+
+
+
+/* Responsive Typography */
+/* For screens with a max width of 1024px */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    
+    .watchcourse-container header
+    {
+        width: 100%;
+        
+    }
+
+    .subwatch-container {
+        flex-direction:row; /* Stack parts vertically */
+    }
+
+    .sc-part1, .sc-part2 {
+        width: 100%;
+        margin-bottom: 20px; /* Add spacing */
+    }
+
+    .cd {
+        padding: 10px;
+    }
+    .sc-p1-card1 h3
+    {
+        text-align: center;
+    }
+    #section-1
+    {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* For screens with a max width of 850px */
+@media (max-width: 1110px) {
+    body {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    header h1 {
+        font-size: 20px; /* Resize the heading */
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .left p {
+        font-size: 12px; /* Resize the account info */
+    }
+
+    .subwatch-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    #sc-part1
+    {
+        width: 40%;
+    }
+    .sc-part2
+    {
+        width: 60%;
+    }
+    .sc-p1-card1 h3
+    {
+        text-align: center;
+    }
+    #section-1 
+    {
+        font-size: 15px;
+    }
+
+    .progress {
+        width: 90%; /* Shrink the progress bar */
+        margin: 0 auto; /* Center it */
+    }
+
+    .heading {
+        font-size: 16px; /* Adjust section headings */
+    }
+
+    .txt {
+        padding: 10px;
+        text-align: justify; /* Adjust text alignment for readability */
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .watchcourse-container
+    {
+        width: 100%;
+    }
+    .watchcourse-container header
+    {
+        width: 100%;
+    }
+    .subwatch-container
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .watchcourse-container header
+    {
+        display: none;
+        padding: 0px;
+    }
+   
+    .subwatch-container
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .miniheader
+    {
+        display:block;
+    }
+    .sc-part1
+    {
+        width:100%;
+        justify-content: flex-start;
+        padding:2px;
+    }
+    .sc-p1-card1 h3
+    {
+        font-size: 15px;
+    }
+    #prog-bar{
+        width:90px;
+        height:10px;
+    }
+    .heading
+    {
+        font-size: 9px;
+    }
+    .topic
+
+    {
+        font-size:12px;
+        height: 40px;
+    }
+
+  
+    
+}
+    
+
+/* Accessibility Focus Styles */
+:focus {
+    outline: 3px solid #a13ba1;
+    outline-offset: 3px;
+}
+
+/* Animation for Cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cd {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Retain Existing Styles (if already defined in your stylesheet) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a13ba1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8c338c;
+}
+
+.act
+{
+    position:relative;
+    width: 200%;
+    z-index:30;
+    display: block;
+
+}
+.tac
+{
+    display: none;
+}
